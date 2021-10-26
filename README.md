@@ -6,7 +6,9 @@
 
 <p align="center">
 <img src="https://git.trustie.net/pkwhiuqat/HumanFallDetectionLSTM/raw/branch/master/flowchart.png?raw=true" alt="flowchart" style="zoom:70%;" />
+
 ## 安装
+
 
 ```shell script
 pip install -r requirements.txt

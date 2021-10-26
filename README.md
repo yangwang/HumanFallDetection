@@ -1,7 +1,7 @@
 # 基于 OpenPifPaf 的多摄像头、多人实时跌倒检测模型
 利用 OpenPifPaf 对输入视频进行人体姿势估计,然后通过长短时记忆神经网络（LSTM）从前面得到的姿势信息中提取五个时间和空间特征以预测"跌倒"动作,支持多摄像头和多人实时检测。模型在 UP-Fall Detection 数据集上训练，基于 PyTorch 实现。
 
-<img src=".\flowchart.png" alt="flowchart" style="zoom:70%;" />
+<img src="./flowchart.png" alt="flowchart" style="zoom:70%;" />
 
 ## 检测实例见 examples 文件夹
 ## 安装

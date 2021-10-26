@@ -8,7 +8,7 @@
 <img src="https://git.trustie.net/pkwhiuqat/HumanFallDetectionLSTM/raw/branch/master/flowchart.png?raw=true" alt="LSTM" style="zoom:68%;" />
 
 <p align="center">
-<img src="https://git.trustie.net/pkwhiuqat/HumanFallDetectionLSTM/raw/branch/master/LSTM.png?raw=true" alt="LSTM" style="zoom:60%;" />
+<img src="https://git.trustie.net/pkwhiuqat/HumanFallDetectionLSTM/raw/branch/master/LSTM.png?raw=true" alt="LSTM" style="zoom:50%;" />
 
 ## 安装
 

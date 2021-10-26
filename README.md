@@ -19,7 +19,7 @@ pip install -r requirements.txt
 python fall_detector.py --num_cams=1
 ```
 
-# Alphapose部分说明
+# Alphapose部分说明(AlphaPose-new分支)
 
 ## Alphapose介绍
 

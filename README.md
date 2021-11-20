@@ -127,7 +127,8 @@ python fall_detector.py --num_cams=1
                             format. (default: result.avi)
       --input_direct INPUT_DIRECT
                             Save the input link to images directory. (default: None)
-
+- 模型输入可以直接为摄像头作为视频源或者用下载好的视频作为视频源。
+- 如果在非服务器端可以通过设置在窗口进行实时画面的显示。
 
 ## 参考
 - [OpenPifPaf](https://github.com/openpifpaf/openpifpaf)

@@ -24,7 +24,7 @@ python fall_detector.py --num_cams=1
 - [UP-fall detection Dataset](https://dx.doi.org/10.3390/s19091988)
 - [Multi-camera, multi-person, and real-time fall detection using long short term memory](https://doi.org/10.1117/12.2580700)
 
-## 完整项目运行代码
+## 完整运行代码
 
     usage: fall_detector.py [-h] [--seed-threshold SEED_THRESHOLD]
                             [--instance-threshold INSTANCE_THRESHOLD]
@@ -99,8 +99,7 @@ python fall_detector.py --num_cams=1
       --basenet BASENET     base network, e.g. resnet50 (default: None)
       --headnets HEADNETS [HEADNETS ...]
                             head networks (default: None)
-      --no-pretrain         create model without ImageNet pretraining (default:
-                            True)
+      --no-pretrain         create model without ImageNet pretraining (default: True)
       --two-scale           [experimental] (default: False)
       --multi-scale         [experimental] (default: False)
       --no-multi-scale-hflip
@@ -124,8 +123,7 @@ python fall_detector.py --num_cams=1
       --joints              Draw joint's keypoints on the output video. (default:
                             True)
       --skeleton            Draw skeleton on the output video. (default: True)
-      --coco_points         Visualises the COCO points of the human pose.
-                            (default: False)
+      --coco_points         Visualises the COCO points of the human pose. (default: False)
       --save_output         Save the result in a video file. Output videos are
                             saved in the same directory as input videos with "out"
                             appended at the start of the title (default: False)

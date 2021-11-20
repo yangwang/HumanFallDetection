@@ -35,7 +35,6 @@ def get_source(args):
     logging.debug('Image shape:', img.shape)
     return cam, tagged_df
 
-
 def resize(img, resize, resolution):
     # Resize the video
     if resize is None:
@@ -124,9 +123,7 @@ def extract_keypoints_parallel(queue, args, self_counter, other_counter, consecu
     queue.put(None)
     return
 
-
 ###################################################### Post human estimation ###########################################################
-
 
 def show_tracked_img(img_dict, ip_set, num_matched, output_video, args):
     img = img_dict["img"]

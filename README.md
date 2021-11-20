@@ -19,10 +19,6 @@ pip install -r requirements.txt
 python fall_detector.py --num_cams=1
 ```
 
-## 参考
-- [OpenPifPaf](https://github.com/openpifpaf/openpifpaf)
-- [UP-fall detection Dataset](https://dx.doi.org/10.3390/s19091988)
-- [Multi-camera, multi-person, and real-time fall detection using long short term memory](https://doi.org/10.1117/12.2580700)
 
 ## 完整运行代码
 
@@ -131,3 +127,8 @@ python fall_detector.py --num_cams=1
                             format. (default: result.avi)
       --input_direct INPUT_DIRECT
                             Save the input link to images directory. (default: None)
+
+## 参考
+- [OpenPifPaf](https://github.com/openpifpaf/openpifpaf)
+- [UP-fall detection Dataset](https://dx.doi.org/10.3390/s19091988)
+- [Multi-camera, multi-person, and real-time fall detection using long short term memory](https://doi.org/10.1117/12.2580700)

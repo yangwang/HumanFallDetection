@@ -23,3 +23,115 @@ python fall_detector.py --num_cams=1
 - [OpenPifPaf](https://github.com/openpifpaf/openpifpaf)
 - [UP-fall detection Dataset](https://dx.doi.org/10.3390/s19091988)
 - [Multi-camera, multi-person, and real-time fall detection using long short term memory](https://doi.org/10.1117/12.2580700)
+
+## 完整项目运行代码
+
+    usage: fall_detector.py [-h] [--seed-threshold SEED_THRESHOLD]
+                            [--instance-threshold INSTANCE_THRESHOLD]
+                            [--keypoint-threshold KEYPOINT_THRESHOLD]
+                            [--decoder-workers DECODER_WORKERS]
+                            [--dense-connections]
+                            [--dense-coupling DENSE_COUPLING] [--caf-seeds]
+                            [--no-force-complete-pose]
+                            [--profile-decoder [PROFILE_DECODER]]
+                            [--cif-th CIF_TH] [--caf-th CAF_TH]
+                            [--connection-method {max,blend}] [--greedy]
+                            [--checkpoint CHECKPOINT] [--basenet BASENET]
+                            [--headnets HEADNETS [HEADNETS ...]] [--no-pretrain]
+                            [--two-scale] [--multi-scale] [--no-multi-scale-hflip]
+                            [--cross-talk CROSS_TALK] [--no-download-progress]
+                            [--head-dropout HEAD_DROPOUT] [--head-quad HEAD_QUAD]
+                            [--resolution RESOLUTION] [--resize RESIZE]
+                            [--num_cams NUM_CAMS] [--video VIDEO] [--debug]
+                            [--disable_cuda] [--plot_graph] [--joints]
+                            [--skeleton] [--coco_points] [--save_output]
+                            [--fps FPS] [--out-path OUT_PATH]
+                            [--input_direct INPUT_DIRECT]
+    
+    optional arguments:
+      -h, --help            show this help message and exit
+      --resolution RESOLUTION
+                            Resolution prescale factor from 640x480. Will be
+                            rounded to multiples of 16. (default: 0.4)
+      --resize RESIZE       Force input image resize. Example WIDTHxHEIGHT.
+                            (default: None)
+      --num_cams NUM_CAMS   Number of Cameras. (default: 1)
+      --video VIDEO         Path to the video file. For single video fall
+                            detection(--num_cams=1), save your videos as abc.xyz
+                            and set --video=abc.xyz For 2 video fall
+                            detection(--num_cams=2), save your videos as abc1.xyz
+                            & abc2.xyz and set --video=abc.xyz (default: None)
+      --debug               debug messages and autoreload (default: False)
+      --disable_cuda        disables cuda support and runs from gpu (default:
+                            False)
+    
+    decoder configuration:
+      --seed-threshold SEED_THRESHOLD
+                            minimum threshold for seeds (default: 0.5)
+      --instance-threshold INSTANCE_THRESHOLD
+                            filter instances by score (default: 0.2)
+      --keypoint-threshold KEYPOINT_THRESHOLD
+                            filter keypoints by score (default: None)
+      --decoder-workers DECODER_WORKERS
+                            number of workers for pose decoding (default: None)
+      --dense-connections   use dense connections (default: False)
+      --dense-coupling DENSE_COUPLING
+                            dense coupling (default: 0.01)
+      --caf-seeds           [experimental] (default: False)
+      --no-force-complete-pose
+      --profile-decoder [PROFILE_DECODER]
+                            specify out .prof file or nothing for default file
+                            name (default: None)
+    
+    CifCaf decoders:
+      --cif-th CIF_TH       cif threshold (default: 0.1)
+      --caf-th CAF_TH       caf threshold (default: 0.1)
+      --connection-method {max,blend}
+                            connection method to use, max is faster (default:
+                            blend)
+      --greedy              greedy decoding (default: False)
+    
+    network configuration:
+      --checkpoint CHECKPOINT
+                            Load a model from a checkpoint. Use "resnet50",
+                            "shufflenetv2k16w" or "shufflenetv2k30w" for
+                            pretrained OpenPifPaf models. (default: None)
+      --basenet BASENET     base network, e.g. resnet50 (default: None)
+      --headnets HEADNETS [HEADNETS ...]
+                            head networks (default: None)
+      --no-pretrain         create model without ImageNet pretraining (default:
+                            True)
+      --two-scale           [experimental] (default: False)
+      --multi-scale         [experimental] (default: False)
+      --no-multi-scale-hflip
+                            [experimental] (default: True)
+      --cross-talk CROSS_TALK
+                            [experimental] (default: 0.0)
+      --no-download-progress
+                            suppress model download progress bar (default: True)
+    
+    head:
+      --head-dropout HEAD_DROPOUT
+                            [experimental] zeroing probability of feature in head
+                            input (default: 0.0)
+      --head-quad HEAD_QUAD
+                            number of times to apply quad (subpixel conv) to heads
+                            (default: 1)
+    
+    Visualisation:
+      --plot_graph          Plot the graph of features extracted from keypoints of
+                            pose. (default: False)
+      --joints              Draw joint's keypoints on the output video. (default:
+                            True)
+      --skeleton            Draw skeleton on the output video. (default: True)
+      --coco_points         Visualises the COCO points of the human pose.
+                            (default: False)
+      --save_output         Save the result in a video file. Output videos are
+                            saved in the same directory as input videos with "out"
+                            appended at the start of the title (default: False)
+      --fps FPS             FPS for the output video. (default: 18)
+      --out-path OUT_PATH   Save the output video at the path specified. .avi file
+                            format. (default: result.avi)
+      --input_direct INPUT_DIRECT
+                            Save the input link to images directory. (default:
+                            None)

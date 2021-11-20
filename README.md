@@ -1,4 +1,4 @@
-# 基于 OpenPifPaf 的多摄像头、多人实时跌倒检测模型
+# 基于 OpenPifPaf 的多摄像头、多人实时跌倒等异常行为识别预警应用研究
 <p align="center">
 <img src="https://git.trustie.net/pkwhiuqat/HumanFallDetectionLSTM/raw/branch/master/documents/outfallingdown.gif?raw=true" alt="outfallingdown"/>
 

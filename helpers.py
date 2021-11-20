@@ -10,7 +10,6 @@ def pop_and_add(l, val, max_length):
         l.pop(0)
     l.append(val)
 
-
 def last_ip(ips):
     for i, ip in enumerate(reversed(ips)):
         if ip is not None:
@@ -70,6 +69,5 @@ def get_hist(img, bbox, nbins=3):
     mask = np.array(mask)
     hist = cv2.calcHist([img], [0, 1], mask, [nbins, 2*nbins], [0, 180, 0, 256])
     cv2.normalize(hist, hist, alpha=1, norm_type=cv2.NORM_L1)
-
 
     return hist

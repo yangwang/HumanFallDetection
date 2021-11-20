@@ -1,6 +1,8 @@
 # 基于 OpenPifPaf 的多摄像头多人实时跌倒等异常行为识别预警应用研究
 <p align="center">
-<img src="https://git.trustie.net/pkwhiuqat/HumanFallDetectionLSTM/raw/branch/master/documents/outfallingdown.gif?raw=true" alt="outfallingdown"/>
+<img src="https://git.trustie.net/pkwhiuqat/HumanFallDetectionLSTM/raw/branch/master/documents/outfallingdown1.gif?raw=true" alt="outfallingdown"/>
+<p align="center">
+<img src="https://git.trustie.net/pkwhiuqat/HumanFallDetectionLSTM/raw/branch/master/documents/outfallingdown2.gif?raw=true" alt="outfallingdown"/>
 
 利用 OpenPifPaf 对输入视频进行人体姿势估计,然后通过长短时记忆神经网络（LSTM）从前面得到的姿势信息中提取五个时间和空间特征（作为当前的 *X*<sub>n</sub> 输入）以预测"跌倒"动作,支持多摄像头和多人实时检测。模型在 UP-Fall Detection 数据集上训练，基于 PyTorch 实现。
 
@@ -134,3 +136,8 @@ python fall_detector.py --num_cams=1
 - [OpenPifPaf](https://github.com/openpifpaf/openpifpaf)
 - [UP-fall detection Dataset](https://dx.doi.org/10.3390/s19091988)
 - [Multi-camera, multi-person, and real-time fall detection using long short term memory](https://doi.org/10.1117/12.2580700)
+- Lei Wang, Du Q. Huynh, Piotr Koniusz. A Comparative Review of Recent Kinect-based Action Recognition Algorithms[J]. IEEE TRANSACTIONS ON IMAGE PROCESSING,2019.
+- Nusrat Tasnim , Mohammad Khairul Islam and Joong-Hwan Baek. Deep Learning Based Human Activity Recognition Using Spatio-Temporal Image Formation of Skeleton Joints[J].applied sciences.
+- Mickael Delamare, Cyril Laville, Adnane Cabani and Houcine Chafouk. Graph Convolutional Networks Skeleton-based Action Recognition for Continuous Data Stream: A Sliding Window Approach[J]. 16th International Conference on Computer Vision Theory and Applications.
+- Tasweer Ahmad, Lianwen Jin, Xin Zhang, Songxuan Lai, Guozhi Tang, and Luojun Lin. Graph Convolutional Neural Network for Human Action Recognition: A Comprehensive Survey[J].
+- Zehua Sun, Jun Liu, Qiuhong Ke, Hossein Rahmani, Mohammed Bennamoun, and Gang Wang. Human Action Recognition from Various Data Modalities: A Review[J].

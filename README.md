@@ -120,7 +120,7 @@ python fall_detector.py --num_cams=1
     Visualisation:
       --plot_graph          Plot the graph of features extracted from keypoints of
                             pose. (default: False)
-      --joints              Draw joint's keypoints on the output video. (default: True)
+      --joints              Draw joints keypoints on the output video. (default: True)
       --skeleton            Draw skeleton on the output video. (default: True)
       --coco_points         Visualises the COCO points of the human pose. (default: False)
       --save_output         Save the result in a video file. Output videos are

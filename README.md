@@ -1,16 +1,16 @@
 # 基于 OpenPifPaf 的多摄像头多人实时跌倒等异常行为识别预警应用研究
 <p align="center">
-<img src="https://git.trustie.net/pkwhiuqat/HumanFallDetectionLSTM/raw/branch/master/documents/outfallingdown1.gif?raw=true" alt="outfallingdown"/>
+<img src="documents/outfallingdown1.gif?raw=true" alt="outfallingdown"/>
 <p align="center">
-<img src="https://git.trustie.net/pkwhiuqat/HumanFallDetectionLSTM/raw/branch/master/documents/outfallingdown2.gif?raw=true" alt="outfallingdown" style="zoom:90%;"/>
+<img src="documents/outfallingdown2.gif?raw=true" alt="outfallingdown" style="zoom:90%;"/>
 
 
-利用 OpenPifPaf 对输入视频进行人体姿势估计,然后通过长短时记忆神经网络（LSTM）从前面得到的姿势信息中提取五个时间和空间特征（作为当前的 *X*<sub>n</sub> 输入）以预测"跌倒"动作,支持多摄像头和多人实时检测。模型在 UP-Fall Detection 数据集上训练，基于 PyTorch 实现。
+利用 OpenPifPaf 对输入视频进行人体姿势估计,然后通过长短时记忆神经网络（LSTM）从前面得到的姿势信息中提取五个时间和空间特征（作为当前的 *X*<sub>n</sub> 输入）以预测"跌倒"动作,支持多摄像头和多人实时检测。基于 PyTorch 在 UP-Fall Detection 数据集上训练，识别准确率达到 98.2% 。
 
 <p align="center">
-<img src="https://git.trustie.net/pkwhiuqat/HumanFallDetectionLSTM/raw/branch/master/flowchart.png?raw=true" alt="LSTM" style="zoom:68%;" />
+<img src="flowchart.png?raw=true" alt="LSTM" style="zoom:68%;" />
 <p align="center">
-<img src="https://git.trustie.net/pkwhiuqat/HumanFallDetectionLSTM/raw/branch/master/LSTM.png?raw=true" alt="LSTM" style="zoom:45%;" />
+<img src="LSTM.png?raw=true" alt="LSTM" style="zoom:45%;" />
 
 ## 安装
 ```shell script
